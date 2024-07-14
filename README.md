@@ -1,6 +1,6 @@
 # LAMP Auto Install Script
 
-This script automates the installation of the LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) on various Linux distributions, including AlmaLinux, RockyLinux, CentOS, Debian, and Ubuntu (20.04, 22.04, 24.04).
+This script automates the installation of the LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) and phpMyAdmin on various Linux distributions, including AlmaLinux, RockyLinux, CentOS, Debian, and Ubuntu (20.04, 22.04, 24.04).
 
 ## Supported Operating Systems
 
@@ -31,8 +31,9 @@ This script automates the installation of the LAMP stack (Linux, Apache, MySQL/M
 ## What the Script Does
 
 - Updates the package list and upgrades existing packages.
-- Installs Apache, MariaDB, and PHP.
+- Installs Apache, MariaDB, PHP, and phpMyAdmin.
 - Starts and enables Apache and MariaDB to run on boot.
+- Configures phpMyAdmin for easy access.
 - Runs `mysql_secure_installation` to secure the MariaDB installation.
 
 ## Post-Installation
@@ -40,6 +41,7 @@ This script automates the installation of the LAMP stack (Linux, Apache, MySQL/M
 - Apache server will be running on port 80.
 - MariaDB server will be running and secured.
 - PHP will be installed and configured to work with Apache.
+- phpMyAdmin will be accessible at `http://your_server_ip/phpmyadmin`.
 
 ## Verifying the Installation
 
