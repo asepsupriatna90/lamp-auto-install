@@ -1,0 +1,1 @@
+# lamp-auto-install
